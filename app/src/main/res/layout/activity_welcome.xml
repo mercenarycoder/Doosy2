@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/themecolor"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pikview"
+        android:layout_below="@id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pickUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/rectangle"
+                android:drawableLeft="@drawable/ic_pickup"
+                android:drawablePadding="10dp"
+                android:text="Set Pick Up Location"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <fragment
+                    android:id="@+id/place_location"
+                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dropview"
+        android:layout_below="@+id/pikview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/drop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/rectangle"
+                android:drawableLeft="@drawable/ic_lens"
+                android:drawablePadding="10dp"
+                android:text="Set Drop Location"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <fragment
+                    android:id="@+id/place_location2"
+                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Welcome"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+
+
+    <ImageView
+        android:id="@+id/confirm_address_map_custom_marker"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pin"/>
+    <ImageView
+        android:id="@+id/pick_confirm_address_map_custom_marker"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pickpin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:paddingBottom="16.6dp"
+        android:background="@drawable/rectangle_whitetop_cure">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="House no., Building, Landmark"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:letterSpacing="0.0525" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="Optional"
+                android:textColor="@color/silver"
+                android:textSize="14sp"
+                android:letterSpacing="0.0525" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp">
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/home"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="0.12"
+                android:textSize="14sp"
+                android:hint="Enter here.."
+                android:id="@+id/address_precision"
+                android:textColor="#000"
+                android:textColorHighlight="#fff"
+                android:textColorHint="#5E5C5C"/>
+
+            <ImageButton
+                android:id="@+id/reposition"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_location"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnviewall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:background="@drawable/gradient_orange"
+            android:fontFamily="@font/sfpro_display_medium"
+            android:text="Done"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18.7sp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.0525"
+            android:textAllCaps="false"
+            android:elevation="0.8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

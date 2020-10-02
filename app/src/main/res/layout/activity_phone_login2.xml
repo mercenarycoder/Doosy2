@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:id="@+id/after_number"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Enter OTP"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="22sp"/>
+       <TextView
+           android:layout_marginTop="100dp"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:text="We Have Sent a OTP on your Number \n +91-7389438159"
+           android:textColor="#000"
+           android:id="@+id/some_number"
+           android:gravity="center"
+           android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/simple1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            >
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:id="@+id/digit_1"
+             android:maxLength="1"
+             android:inputType="number"
+             android:background="#DDDADA"
+             android:hint="______"
+             android:gravity="center"
+             android:layout_marginRight="10dp"
+             android:textSize="35sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/digit_2"
+                android:maxLength="1"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:background="#DDDADA"
+                android:hint="______"
+                android:textSize="35sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:gravity="center"
+                android:id="@+id/digit_3"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                android:background="#DDDADA"
+                android:hint="______"
+                android:textSize="35sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/digit_4"
+                android:layout_marginRight="10dp"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="#DDDADA"
+                android:hint="______"
+                android:textSize="35sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/digit_5"
+                android:layout_marginRight="10dp"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="#DDDADA"
+                android:hint="______"
+                android:textSize="35sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:gravity="center"
+                android:id="@+id/digit_6"
+                android:inputType="number"
+                android:background="#DDDADA"
+                android:hint="______"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/sfpro_display_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_orange"
+            android:text="Verify"
+            android:enabled="false"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:id="@+id/buttonSignIn"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="160.3dp"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:letterSpacing="0.0525"
+            android:elevation="0.8dp"/>
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/countrycd"
+    android:visibility="visible"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PhoneLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="17dp"
+        android:clipToPadding="false">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/doosypic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to dossy"
+            android:textColor="@color/black"
+            android:textSize="18.3sp"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.0425"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login signup"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="5dp"
+            android:letterSpacing="0.0425"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter a 10 digit mobile number"
+            android:textColor="@color/black"
+            android:textSize="12.7sp"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="22dp"
+            android:letterSpacing="0.0425"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_flyer"
+            android:hint="Mobile Number"
+            android:textSize="15sp"
+            android:textColor="@color/silver"
+            android:id="@+id/editTextPhone"
+            android:textColorHighlight="@color/black"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingTop="16.7dp"
+            android:paddingBottom="16.7dp"
+            android:layout_marginTop="7.7dp"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:maxLength="10"
+            android:letterSpacing="0.0525"/>
+
+        <TextView
+            android:fontFamily="@font/sfpro_display_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_orange"
+            android:text="Please enter Otp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:id="@+id/buttonGetVerificationCode"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="23.3dp"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:letterSpacing="0.0525"
+            android:elevation="0.8dp"/>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

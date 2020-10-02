@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">doosy</string>
+    <string name="mistridada">MISTRIDADA</string>
+    <string name="customer">Find labour</string>
+    <string name="looking_for_labour_app">LOOKING FOR LABOUR APP?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="register">REGISTER</string>
+    <string name="email">Email</string>
+    <string name="updatedkey">AIzaSyBoV1uEQXCMjHiddY0xowNhPBCWQG4GOhw</string>
+    <string name="google_direction_api">AIzaSyAIjaPC_iN9CVxyuV7gic_GTqwXMhfb9Ys</string>
+    <string name="appkey">AIzaSyBoV1uEQXCMjHiddY0xowNhPBCWQG4GOhw</string>
+    <string name="password">Password</string>
+    <string name="name">Full name</string>
+    <string name="pickadd">Pickup address</string>
+    <string name="orderhint">Task detail. Eg: 2 books, 1 pencil, 1 eraser.</string>
+    <string name="phone">Phone</string>
+    <string name="title_activity_welcome">Set Pickup Location</string>
+    <string name="title_activity_welcome1">Set Drop Location</string>
+    <string name="title_activity_mistri">Map</string>
+    <string name="title_activity_plumber">Map</string>
+    <string name="title_activity_electrician">Map</string>
+    <string name="title_activity_mechanic">Map</string>
+    <string name="title_activity_carpenter">Map</string>
+    <string name="title_activity_painter">Map</string>
+    <string name="title_activity_miniloader">Map</string>
+    <string name="title_activity_infoWindow">Info</string>
+    <string name="find_user">FIND USER</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Help</string>
+    <string name="pickup_request">PICKUP REQUEST</string>
+    <string name="forgot_password_just_tap_here">FORGOT PASSWORD? JUST TAP HERE!</string>
+    <array name="services">
+        <item>Documents|Books</item>
+        <item>Clothes|Accessories</item>
+        <item>Food|Flowers</item>
+        <item>Household Items</item>
+        <item>Sports and other</item>
+        <item>Electronic item</item>
+    </array>
+
+    <string name="title_activity_man_list">ManList</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="offertitle1">Send Package</string>
+    <string name="taskdtl">Task Detail.</string>
+    <string name="orderdtl">Task Detail.</string>
+    <string name="offertitle2">Purchase Grocery</string>
+    <string name="whatisdoozy">Doosy is delivery service provider which is currently available in bhopal. Doosy delivers from your pickup address from home to office, office to home, shops to home, friend to friend, family to family within 20 to 60 minutes. you can send sweet to your loved one, gift for your friend, to anyone from anywhere. we dont deliver illegal items.</string>
+    <string name="offer2">Get fresh and organic grocery delivered at your home.</string>
+    <string name="offer1">Send package across city. send gifts, sweets to your family, office.</string>
+    <string name="ot1">Anything Anytime Anywhere!!</string>
+    <string name="punchline">Samay barbad kiya! Doosy nhi kiya!</string>
+    <string name="dt1">Send packages acsross the city at flat Rs.69 Hurry!!</string>
+    <string name="ot2">Doosy!</string>
+
+    <string name="do1">1. Fill pickup and drop address and select package content type.</string>
+    <string name="do2">2. Set exact pickup and drop location on map.!</string>
+    <string name="shoptitle1">Restaurant</string>
+    <string name="shoptitle2">Grocery</string>
+    <string name="shoptitle3">Chicken|Fish</string>
+    <string name="shoptitle4">Gifts</string>
+    <string name="shoptitle5">Paan</string>
+    <string name="shoptitle6">Fruits/Vegs</string>
+    <string name="title_storelist">Store List</string>
+    <string name="title_activity_current_location_activity">Map</string>
+
+</resources>

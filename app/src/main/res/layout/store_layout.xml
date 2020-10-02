@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/themecolor"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_stores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:text="No shops near you location \n change location by clicking me"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="#000"
+        android:id="@+id/shops_loader"/>
+</RelativeLayout>

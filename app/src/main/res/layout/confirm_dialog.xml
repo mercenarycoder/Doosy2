@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+   android:orientation="vertical"
+    android:background="#E1DDDD"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#000"
+    android:textSize="17sp"
+    android:layout_margin="10dp"
+    android:text="
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas natus voluptates dicta corrupti labore itaque dignissimos libero iste voluptas facilis odit reprehenderit nesciunt ipsum quia reiciendis, aut dolores enim iure perferendis sed eligendi, eius beatae quis vitae? Excepturi dolores aliquam illo, amet fuga sint. Odio quas unde quod voluptatibus assumenda!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit est in veritatis architecto explicabo reprehenderit facere et ut, adipisci sequi laboriosam! Eos sunt iure laborum possimus aliquam itaque ipsam."
+    />
+<CheckBox
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:text="Mark the Checkbox and click on the button to proceed"
+    android:id="@+id/checkbox"
+    android:textSize="18sp"
+    android:layout_margin="5dp"
+    android:padding="2dp"/>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:baselineAligned="false"
+     android:orientation="horizontal">
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:text="Cancel"
+        android:background="#fff"
+         android:id="@+id/cancel_verification"
+         android:layout_weight="1"/>
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:text="OK"
+         android:background="#fff"
+         android:id="@+id/proceed_verification"
+         android:layout_weight="1"/>
+ </LinearLayout>
+</LinearLayout>

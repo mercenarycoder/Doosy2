@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="350dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="600dp"
+    android:background="@color/themecolor"
+    android:orientation="vertical"
+    android:padding="0dp"
+    >
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/menu_view"
+     android:padding="10dp"
+     android:layout_alignParentTop="true"
+     android:layout_centerInParent="false"
+     android:layout_marginBottom="50dp"/>
+   <ImageButton
+       android:layout_width="100dp"
+       android:layout_height="30dp"
+       android:background="#000"
+       android:id="@+id/zoom_in"
+       android:src="@drawable/ic_zoom_in_black_24dp"/>
+
+     <ImageButton
+         android:id="@+id/zoom_out"
+         android:layout_width="100dp"
+         android:layout_height="30dp"
+         android:background="#000"
+         android:layout_marginLeft="250dp"
+         android:src="@drawable/ic_zoom_out_black_24dp" />
+
+     <TextView
+     android:layout_width="match_parent"
+     android:layout_height="30dp"
+     android:textSize="18sp"
+     android:fontFamily="@font/sfpro_display_medium"
+     android:text="No Menu In The Database"
+     android:gravity="center"
+     android:textColor="#fff"
+     android:id="@+id/menu_not_valid"
+     android:visibility="visible"
+     android:enabled="true"
+     android:textStyle="bold"
+     />
+ </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/previous_button"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:src="@drawable/ic_send_left"
+            android:background="@color/themecolor"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/close_button12"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:text="Close Menu"
+            android:background="#CDDC39"
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/next_button"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:src="@drawable/ic_send_next"
+            android:background="@color/themecolor"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

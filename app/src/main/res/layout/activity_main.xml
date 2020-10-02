@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/rootLayout"
+    tools:context=".MainActivity">
+
+    <!--<TextView
+        android:id="@+id/txt_forgot_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/forgot_password_just_tap_here"
+        android:textAlignment="center"
+        android:textColor="@color/bottomText"
+        android:textSize="18sp" />-->
+
+
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Doosy"
+            android:textStyle="bold"
+            android:textColor="#00D9AE"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/doosypic" />
+        <Button
+            android:id="@+id/btnSignphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/signin_rect"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="80dp"
+            android:paddingTop="10dp"
+            android:paddingRight="80dp"
+            android:paddingBottom="10dp"
+            android:text="LOGIN WITH PHONE"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="300dp"
+
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        />
+        <!--<Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/signin_rect"
+            android:gravity="center_horizontal"
+            android:paddingLeft="80dp"
+            android:paddingTop="10dp"
+            android:paddingRight="80dp"
+            android:paddingBottom="10dp"
+            android:text="SIGN IN EMAIL"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/signin_rect"
+            android:gravity="center_horizontal"
+            android:paddingLeft="80dp"
+            android:paddingTop="10dp"
+            android:paddingRight="80dp"
+            android:paddingBottom="10dp"
+            android:text="SIGN UP"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />-->
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#02FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:background="@drawable/dialog_round"
+    android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:src="@drawable/ic_location"/>
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/use_current"
+    android:text="Use Current Location"
+    android:background="@drawable/button_line_border2"
+    android:drawableLeft="@drawable/ic_location"
+    android:textColor="#615B5B"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/ic_address"
+        android:id="@+id/use_address"
+        android:text="Use Address"
+        android:textColor="#615B5B"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:id="@+id/close_chooser"
+        android:text="Colse"
+        android:background="#6737BB"
+        android:textColor="#F7F2F2"/>
+</LinearLayout>
+</LinearLayout>

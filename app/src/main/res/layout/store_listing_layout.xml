@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/click_shop"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/store_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/box"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="6dp"
+                android:text="Rich N Topp Striker 03 Runing Shoes"
+                android:maxLines="1"/>
+
+
+            <TextView
+                android:id="@+id/store_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bakery, Chinese, South Indian, Pizza"
+                android:gravity="bottom"
+                android:textSize="12dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="2dp"
+
+                />
+
+            <TextView
+                android:id="@+id/store_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textSize="12dp"
+                android:text="Mp Nagar, Zone-1"
+                android:maxLines="1"/>
+            <TextView
+                android:id="@+id/store_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:visibility="invisible"
+                android:enabled="false"
+                android:textColor="#CA1212"
+                android:gravity="center"
+                android:text="Out Of Range"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

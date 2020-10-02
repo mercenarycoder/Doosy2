@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Kuldeep Thakur"
+            android:drawablePadding="7dp"
+            android:drawableLeft="@drawable/ic_pickup"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+             />
+
+        <TextView
+            android:id="@+id/txtli1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lens"
+            android:drawablePadding="7dp"
+            android:text="Orderid"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/packagecontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/orderpackage1"
+            android:text="Orderid"
+            android:drawablePadding="7dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/deliverycharges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/rupeeindian"
+            android:drawablePadding="7dp"
+            android:text="100"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
